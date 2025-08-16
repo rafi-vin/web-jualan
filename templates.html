@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TemplateHub - Premium Website Templates</title>
+    <meta
+      name="description"
+      content="Platform terpercaya untuk template website premium yang membantu bisnis Anda berkembang di era digital."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo" style="display: flex; align-items: center">
+            <img
+              src="/images/logo.png"
+              alt="Logo Webina Template"
+              class="logo-img"
+              style="height: 48px; width: auto; margin-left: 4px"
+            />
+            <span
+              class="logo-text"
+              style="
+                margin-left: 12px;
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: #d97706;
+              "
+              >Webina Template</span
+            >
+          </div>
+
+          <!-- Added mobile hamburger menu button -->
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+
+          <!-- Navigation moved to the right side and removed "Jelajahi Template" button -->
+          <nav class="nav nav-right" id="mobileNav">
+            <a href="index.html" class="nav-link" onclick="closeMobileMenu()"
+              >Beranda</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Templates Section -->
+    <section id="templates" class="templates-section">
+      <div class="container">
+        
+        <!-- Search and Filter -->
+        <div class="search-filter">
+          <div class="search-box">
+            <svg
+              class="search-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Cari template..."
+              class="search-input"
+            />
+          </div>
+
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46" />
+              </svg>
+              Semua Template
+            </button>
+            <button class="filter-btn" data-category="company">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46" />
+              </svg>
+              Company Profile
+            </button>
+            <button class="filter-btn" data-category="export">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46" />
+              </svg>
+              Export Business
+            </button>
+            <button class="filter-btn" data-category="import">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46" />
+              </svg>
+              Import Business
+            </button>
+          </div>
+        </div>
+
+        <div class="templates-grid" id="templatesGrid">
+          <!-- Templates will be populated by JavaScript -->
+        </div>
+
+        <div class="no-results" id="noResults" style="display: none">
+          <p>Tidak ada template yang sesuai dengan pencarian Anda.</p>
+        </div>
+
+        <div class="section-footer">
+          <button class="btn btn-outline btn-large">
+            Lihat Semua Template
+            <svg
+              class="btn-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12,5 19,12 12,19" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <div class="logo-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="m5 12 7-7 7 7" />
+                </svg>
+              </div>
+              <span class="logo-text">TemplateHub</span>
+            </div>
+            <p class="footer-description">
+              Platform terpercaya untuk template website premium yang membantu
+              bisnis Anda berkembang di era digital.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h4>Template</h4>
+            <ul>
+              <li><a href="#">Export Business</a></li>
+              <li><a href="#">Import Business</a></li>
+              <li><a href="#">Company Profile</a></li>
+              <li><a href="#">Trading Company</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Dukungan</h4>
+            <ul>
+              <li><a href="#">Pusat Bantuan</a></li>
+              <li><a href="#">Live Chat</a></li>
+              <li><a href="#">Dokumentasi</a></li>
+              <li><a href="#">Tutorial</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Perusahaan</h4>
+            <ul>
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Kebijakan Privasi</a></li>
+              <li><a href="#">Syarat Layanan</a></li>
+              <li><a href="#">Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 TemplateHub. Hak cipta dilindungi undang-undang.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
