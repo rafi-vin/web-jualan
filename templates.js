@@ -273,24 +273,6 @@ function renderTemplates() {
     .join("");
 }
 
-// FAQ functionality
-function toggleFAQ(id) {
-  const faqItem = document.querySelector(`#faq-${id}`).parentElement;
-  const faqAnswer = document.querySelector(`#faq-${id}`);
-
-  // Close all other FAQs
-  document.querySelectorAll(".faq-item").forEach((item) => {
-    if (item !== faqItem) {
-      item.classList.remove("active");
-      item.querySelector(".faq-answer").classList.remove("active");
-    }
-  });
-
-  // Toggle current FAQ
-  faqItem.classList.toggle("active");
-  faqAnswer.classList.toggle("active");
-}
-
 // Smooth scroll to top functionality
 function scrollToTop() {
   window.scrollTo({
