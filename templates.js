@@ -256,7 +256,7 @@ function renderTemplates() {
                 template.detailUrl
               }" class="btn btn-primary" style="width: 100%;" target="_blank">Lihat Detail</a>
               <a 
-                href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20template%20${encodeURIComponent(
+                href="https://wa.me/6285351992814?text=Halo,%20saya%20tertarik%20dengan%20template%20${encodeURIComponent(
                   template.title
                 )}" 
                 target="_blank" 
