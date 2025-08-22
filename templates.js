@@ -86,15 +86,15 @@ const templates = [
   },
   {
     id: 8,
-    title: "Corporate Vision",
+    title: "Coffe Shop",
     category: "company",
     categoryLabel: "Company Profile",
-    price: "Rp2.190.000",
+    price: "",
     rating: 4.7,
     reviews: 167,
-    image: "/images/company-kost.png",
-    features: ["Vision Mission", "Leadership Team", "Career Portal"],
-    detailUrl: "https://web-kost.vercel.app/",
+    image: "/images/Coffe Shop.png",
+    features: ["24/7 Support", "SEO Optimized", "Mobile Ready"],
+    detailUrl: "https://template-cafe.vercel.app/",
   },
 ];
 
