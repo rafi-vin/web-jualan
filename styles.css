@@ -594,7 +594,10 @@ h6 {
     max-width: 520px; /* Lebih besar */
     width: 100%;
     margin-right: 2rem; /* Tambah jarak ke kanan */
-    transition: transform 0.3s;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero-image img:hover {
+    transform: scale(1.07) rotate(-2deg);
   }
 }
 
@@ -783,8 +786,8 @@ h6 {
 }
 
 .template-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 40px rgba(217, 119, 6, 0.15);
 }
 
 /* Tambahkan border-radius lebih besar pada card */
@@ -904,6 +907,12 @@ h6 {
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   font-size: 0.75rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.feature-badge:hover {
+  background: #fde68a;
+  color: #d97706;
 }
 
 .no-results {
@@ -965,11 +974,12 @@ h6 {
   padding: 1.5rem;
   border-radius: 0.75rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 
 .testimonial-card:hover {
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 16px 40px rgba(217, 119, 6, 0.13);
+  transform: scale(1.03);
 }
 
 .testimonial-header {
