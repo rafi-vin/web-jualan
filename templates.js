@@ -75,7 +75,7 @@ const templates = [
   {
     id: 7,
     title: "Air Conditioner Company",
-    category: "Company",
+    category: "company",
     categoryLabel: "Company Profile",
     price: "",
     rating: 4.8,
