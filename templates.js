@@ -108,6 +108,18 @@ const templates = [
     features: ["Portfolio Gallery", "Team Showcase", "Contact Forms"],
     detailUrl: "https://web-portfolio-mm.vercel.app/",
   },
+  {
+    id: 10,
+    title: "Prefosional Portfolio Design Grafis",
+    category: "portfolio",
+    categoryLabel: "Personal Portfolio",
+    price: "",
+    rating: 4.5,
+    reviews: 122,
+    image: "/images/Personal Portfolio Design Grafis.png",
+    features: ["Portfolio Gallery", "Team Showcase", "Contact Forms"],
+    detailUrl: "https://web-portfolio-design-grafis.vercel.app/",
+  },
 ];
 
 // State variables
