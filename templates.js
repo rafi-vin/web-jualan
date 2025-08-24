@@ -96,6 +96,18 @@ const templates = [
     features: ["24/7 Support", "SEO Optimized", "Mobile Ready"],
     detailUrl: "https://template-cafe.vercel.app/",
   },
+  {
+    id: 9,
+    title: "Personal Portfolio Multimedia",
+    category: "portfolio",
+    categoryLabel: "Personal Portfolio",
+    price: "",
+    rating: 4.8,
+    reviews: 169,
+    image: "/images/Professional Designer.png",
+    features: ["Portfolio Gallery", "Team Showcase", "Contact Forms"],
+    detailUrl: "https://portfolio-designer-tau.vercel.app/",
+  },
 ];
 
 // State variables
