@@ -104,7 +104,7 @@ const templates = [
     price: "",
     rating: 4.8,
     reviews: 169,
-    image: "/images/Professional Designer.png",
+    image: "/images/Personal Portfolio Multimedia.png",
     features: ["Portfolio Gallery", "Team Showcase", "Contact Forms"],
     detailUrl: "https://portfolio-designer-tau.vercel.app/",
   },
