@@ -106,7 +106,7 @@ const templates = [
     reviews: 169,
     image: "/images/Personal Portfolio Multimedia.png",
     features: ["Portfolio Gallery", "Team Showcase", "Contact Forms"],
-    detailUrl: "https://portfolio-designer-tau.vercel.app/",
+    detailUrl: "https://web-portfolio-mm.vercel.app/",
   },
 ];
 
